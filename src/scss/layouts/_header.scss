@@ -1,0 +1,71 @@
+@use "../abstracts/variables";
+
+.header-container {
+  width: 80%;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.top-bar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  height: 80px;
+}
+
+.social > img {
+  padding-left: 10px;
+}
+
+.logo-container {
+  justify-self: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: 227px;
+  height: 37px;
+  background: url('../../src/assets/icons/header/logo.svg') repeat 0 0;
+}
+
+.logo img {
+  margin-left: 1.4px;
+}
+
+.icons {
+  justify-self: end;
+}
+
+.icons img {
+  padding-right: 10px;
+}
+
+.line-between {
+  border-top: 1px solid variables.$color-line-border;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding-inline-start: 0;
+  font-weight: bold;
+  font-size: 18px;
+  gap: 30px;
+}
+
+nav ul li:last-child {
+  margin-right: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: variables.$color-text;
+}
