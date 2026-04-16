@@ -1,7 +1,7 @@
 @use "../abstracts/variables";
 
 .header-container {
-  width: 80%;
+  width: variables.$width-main-content;
   max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
@@ -14,7 +14,7 @@
   height: 80px;
 }
 
-.social > img {
+.social img {
   padding-left: 10px;
 }
 
@@ -68,4 +68,86 @@ nav ul li:last-child {
 a {
   text-decoration: none;
   color: variables.$color-text;
+}
+
+.footer {
+  font-family: Helvetica, sans-serif;
+}
+
+.footer-background {
+  background-color: #504E4A;
+  padding: 10px 0 20px 0;
+  color: white;
+
+  background-image: url('../../src/assets/icons/footer/wave-line.svg');
+  background-repeat: repeat;
+  background-size: 300px 40px;
+}
+
+.footer-container {
+  width: variables.$width-main-content;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer h3 {
+  padding-left: 10px;
+}
+
+.benefits-cards {
+  display: flex;
+  gap: 40px;
+}
+
+.benefits-card {
+  display: flex;
+  font-size: 13px;
+  gap: 10px;
+}
+
+.footer-bottom {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  font-size: 13px;
+  gap: 50px;
+}
+
+.footer-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+}
+
+.shipping-info {
+  grid-area: 2 / 1 / 3 / 4;
+}
+
+.footer-contact {
+  display: grid;
+  grid-template-areas: 
+  "contact contact contact"
+  "phone phone email"
+  "time time location"
+  ;
+}
+
+.contact {
+  grid-area: contact;
+}
+
+.phone {
+  grid-area: phone;
+}
+
+.email {
+  grid-area: email;
+}
+
+.time {
+  grid-area: time;
+}
+
+.location {
+  grid-area: location;
 }
