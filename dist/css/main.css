@@ -125,6 +125,7 @@ footer h3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
+  margin-right: 50px;
 }
 
 .shipping-info {
@@ -134,6 +135,10 @@ footer h3 {
 .footer-contact {
   display: grid;
   grid-template-areas: "contact contact contact" "phone phone email" "time time location";
+}
+
+.footer-contact img {
+  display: block;
 }
 
 .contact {
@@ -154,6 +159,20 @@ footer h3 {
 
 .location {
   grid-area: location;
+}
+
+.phone, .email, .time, .location {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.copyright {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  color: rgb(145, 145, 145);
 }
 
 /*# sourceMappingURL=main.css.map */
