@@ -70,6 +70,38 @@ a {
   color: variables.$color-text;
 }
 
+// *** Main content
+
+.intro-top {
+  background-color: #E7E8E9;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.slogan-container {
+  display: flex;
+  width: variables.$width-main-content;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro-bottom {
+  display: flex;
+  width: variables.$width-main-content;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -80px;
+  background-color: white;
+}
+
+.officer {
+  display: flex;
+}
+
+// ***
+
 .footer {
   font-family: Helvetica, sans-serif;
 }
