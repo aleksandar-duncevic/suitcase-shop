@@ -93,6 +93,10 @@ a {
   margin-right: auto;
 }
 
+.slogan h1 {
+  font-size: 50px;
+}
+
 .intro-bottom {
   display: flex;
   width: 80%;
@@ -105,6 +109,23 @@ a {
 
 .officer {
   display: flex;
+}
+
+.button-all-items {
+  height: 60px;
+  padding: 0 24px;
+  letter-spacing: 0.5px;
+  margin-top: 30px;
+  background-color: #B92770;
+  color: #ffffff;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .footer {
