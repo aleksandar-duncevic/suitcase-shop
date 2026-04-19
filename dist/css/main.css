@@ -234,7 +234,7 @@ footer h3 {
 .footer-bottom {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .footer-info {
@@ -251,6 +251,7 @@ footer h3 {
 .footer-contact {
   display: grid;
   grid-template-areas: "contact contact contact" "phone phone email" "time time location";
+  column-gap: 10px;
 }
 
 .footer-contact img {
