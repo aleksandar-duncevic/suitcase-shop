@@ -90,20 +90,6 @@ a {
   font-size: 50px;
 }
 
-.intro-bottom {
-  display: flex;
-  width: variables.$width-main-content;
-  max-width: 1300px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -80px;
-  background-color: white;
-}
-
-.officer {
-  display: flex;
-}
-
 .button-all-items {
   height: 60px;
   padding: 0 24px;
@@ -123,10 +109,45 @@ a {
   cursor: pointer;
 }
 
+
+.intro-bottom {
+  display: flex;
+  width: variables.$width-main-content;
+  max-width: 1300px;
+  margin: -80px auto 0;
+  background-color: white;
+  height: 500px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15),
+    0 30px 80px rgba(0, 0, 0, 0.1);
+}
+
+.officer-container,
+.discount {
+  flex: 1;
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.officer-wrapper {
+  margin: 40px;
+}
+
+.officer {
+  display: flex;
+}
+
+.discount {
+  background-image: url('../../src/assets/icons/homepage/suitcases-main-banner.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 // ***
 
 .footer {
   font-family: Helvetica, sans-serif;
+  margin-top: 50px;
 }
 
 .footer-background {
@@ -165,14 +186,13 @@ footer h3 {
   display: grid;
   grid-template-columns: 2fr 1fr;
   font-size: 13px;
-  gap: 50px;
 }
 
 .footer-info {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
-  margin-right: 50px;
+  margin-right: 100px;
 }
 
 .shipping-info {
