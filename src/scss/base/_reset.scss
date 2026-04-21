@@ -1,11 +1,17 @@
+@use "fonts";
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+html {
+  font-family: fonts.$font-primary;
+}
+
+
 body {
   margin: 0;
-  font-family: sans-serif;
 }
 
