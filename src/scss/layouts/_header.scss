@@ -1,5 +1,12 @@
 @use "../abstracts/variables";
 
+.container {
+  width: variables.$width-main-content;
+  max-width: 1300px;
+  margin: 0 auto;
+  //padding: 0 20px; /* important for small screens */
+}
+
 .header-container {
   width: variables.$width-main-content;
   max-width: 1300px;
@@ -109,7 +116,6 @@ a {
   cursor: pointer;
 }
 
-
 .intro-bottom {
   display: flex;
   width: variables.$width-main-content;
@@ -140,8 +146,6 @@ a {
   margin-bottom: 20px;
   gap: 20px;
 }
-
-
 
 .discount-wrapper {
   position: relative;
@@ -190,6 +194,80 @@ a {
   color: white;
   border: none;
   padding: 14px 28px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+// Discount banner
+
+.discount-section {
+  width: 100%;
+  padding: 60px 0; /* vertical spacing between sections */
+}
+
+.discount-banner {
+  position: relative;
+  overflow: hidden;
+
+  background: url('../../src/assets/images/homepage/offer-of-the-month-banner.png') center/cover no-repeat;
+}
+
+.discount-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.discount-content {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 100%;
+  padding: 50px 60px;
+  color: white;
+}
+
+.discount-left h1 {
+  font-size: 200px;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+}
+
+.discount-left p {
+  font-size: 14px;
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+.discount-right {
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+}
+
+.discount-right h3 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.discount-right p {
+  font-size: 15px;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.discount-right button {
+  background: #d63384;
+  border: none;
+  padding: 10px 18px;
+  color: white;
   font-weight: 600;
   cursor: pointer;
 }
