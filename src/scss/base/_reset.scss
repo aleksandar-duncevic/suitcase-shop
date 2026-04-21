@@ -10,6 +10,11 @@ html {
   font-family: fonts.$font-primary;
 }
 
+button,
+input,
+textarea {
+  font-family: inherit;
+}
 
 body {
   margin: 0;
