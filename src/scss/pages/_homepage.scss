@@ -195,3 +195,27 @@
   font-weight: 600;
   cursor: pointer;
 }
+
+.customers-heading {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+
+
+.customers-cards {
+  display: flex;
+  gap: 20px;
+}
+
+.customer-card {
+  text-align: center;
+  padding: 30px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15),
+    0 30px 80px rgba(0, 0, 0, 0.1);
+}
+
+.customer-card h4 {
+  color:#d63384;
+}
+

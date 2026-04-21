@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://googleapis.com");
 *,
 *::before,
 *::after {
@@ -378,6 +378,26 @@ footer h3 {
   color: white;
   font-weight: 600;
   cursor: pointer;
+}
+
+.customers-heading {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.customers-cards {
+  display: flex;
+  gap: 20px;
+}
+
+.customer-card {
+  text-align: center;
+  padding: 30px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15), 0 30px 80px rgba(0, 0, 0, 0.1);
+}
+
+.customer-card h4 {
+  color: #d63384;
 }
 
 /*# sourceMappingURL=main.css.map */
