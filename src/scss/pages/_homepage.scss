@@ -1,5 +1,9 @@
 @use "../abstracts/variables";
 
+section {
+  padding-bottom: 80px;
+}
+
 .intro-top {
   background-color: #E7E8E9;
   padding-top: 100px;
@@ -123,7 +127,6 @@
 
 .discount-section {
   width: 100%;
-  padding: 60px 0; /* vertical spacing between sections */
 }
 
 .discount-banner {
@@ -292,12 +295,6 @@
   color: #fff;
   font-size: 12px;
   padding: 4px 8px;
-}
-
-.product-card h3 {
-  //font-size: 15px;
-  //font-weight: 500;
-  margin-bottom: 10px;
 }
 
 .price {
