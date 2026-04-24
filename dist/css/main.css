@@ -525,7 +525,43 @@ section {
 .catalog-sidebar {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 20px;
+}
+.catalog-sidebar h4 {
+  margin: 0;
+}
+
+.sidebar-item {
+  display: flex;
+  height: 80px;
+  gap: 15px;
+}
+
+.sidebar-item img {
+  width: 80px;
+  height: 100%;
+  object-fit: contain;
+}
+
+.sidebar-item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar-item-title {
+  font-size: 14px;
+  margin: 0;
+}
+
+.sidebar-item-rating {
+  font-size: 12px;
+  color: gold;
+}
+
+.sidebar-item-price {
+  font-weight: 600;
+  font-size: 14px;
 }
 
 .pagination {
