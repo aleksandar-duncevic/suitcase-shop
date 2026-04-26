@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "echo \"Dummy build script required for Autocode Compile\"",
     "ts-compile": "npx tsc",
-    "dev": "sass --watch src/scss:dist/css"
+    "dev": "concurrently \"sass --watch src/scss:dist/css\" \"tsc --watch\" \"live-server --open=src/index.html\""
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,8 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "concurrently": "^9.2.1",
+    "live-server": "^1.2.2",
     "sass": "^1.99.0",
     "typescript": "^6.0.2"
   }

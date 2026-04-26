@@ -13,8 +13,17 @@ npm install
 ```
 npm run dev
 ```
-This command compiles SCSS files into CSS and watches for changes.
+This command run three processes in parallel:
+- Compiles SCSS files from src/scss into CSS in dist/css
+- Compiles TypeScript files from src/ts into JavaScript files in dist/js
+- Starts a local development server using live-server
 
-### Important
-Styles are written in SCSS and compiled in CSS
-Do not edit files in dist/ folder
+The application will automatically open in your browser at:
+
+http://127.0.0.1:8080/src/index.html
+
+### Notes
+No additional tools are required  
+Do not edit files in dist/ folder, they are auto-generated  
+All styles must be written in SCSS and compiled into CSS  
+All TypeScript is compiled into JavaScript before running in the browser  
