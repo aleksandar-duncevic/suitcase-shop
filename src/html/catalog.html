@@ -45,13 +45,21 @@
         <div class="catalog-toolbar">
           <div class="catalog-toolbar-left">
             <span>Showing 1-12 of 15 Results</span>
+            <div class="select-box">
+              <select>
+                <option>Default Sorting</option>
+                <option>Price low to high</option>
+                <option>Price high to low</option>
+              </select>
 
-            <select>
-              <option>Default Sorting</option>
-            </select>
+              <img src="/src/assets/icons/catalog/select-arrow.svg" alt="">
+            </div>
           </div>
           <div class="catalog-toolbar-right">
-            <input type="text" placeholder="Search models" />
+            <div class="search-box">
+            <input type="text" placeholder="Search Models" />
+            <span class="search-icon"><img src="/src/assets/icons/catalog/search-icon.svg" alt=""></span>
+          </div>
           </div>
         </div>
         <div class="catalog-wrapper">
@@ -95,7 +103,7 @@
           <aside class="catalog-sidebar">
             <h4>Top Best Sets</h4>
             <div class="sidebar-item">
-              <img src="../assets/images/catalog/set-red-small.png" alt="product" />
+              <img src="/src/assets/images/catalog/set-red-small.png" alt="product" />
               <div class="sidebar-item-content">
                 <p class="sidebar-item-title">Primis in faucibus aenean <br> laoreet rhoncus ipsum eget.</p>
 
@@ -104,10 +112,16 @@
                 <span class="sidebar-item-price">$1000</span>
               </div>
             </div>
-            <div class="set-card"></div>
-            <div class="set-card"></div>
-            <div class="set-card"></div>
-            <div class="set-card"></div>
+            <div class="sidebar-item">
+              <img src="/src/assets/images/catalog/set-red-small.png" alt="product" />
+              <div class="sidebar-item-content">
+                <p class="sidebar-item-title">Primis in faucibus aenean <br> laoreet rhoncus ipsum eget.</p>
+
+                <div class="sidebar-item-rating">★★★★★</div>
+
+                <span class="sidebar-item-price">$1000</span>
+              </div>
+            </div>
           </aside>
         </div>
       </div>

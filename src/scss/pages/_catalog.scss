@@ -9,6 +9,56 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
+  color: #777;
+}
+
+.select-box {
+  position: relative;
+  width: 180px;
+  img {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    pointer-events: none;
+  }
+  select {
+  color: #777;
+  }
+}
+
+.select-box select {
+  width: 100%;
+  padding: 10px 35px 10px 12px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  background: white;
+  appearance: none;
+  cursor: pointer;
+}
+
+.search-box {
+  position: relative;
+  width: 100%;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px 40px 10px 15px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  color: #777;
+}
+
+.search-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  pointer-events: none;
 }
 
 .product-grid {
@@ -34,7 +84,7 @@
 
 .sidebar-item img {
   width: 80px;
-  height: 100%;      // ✅ fill full height
+  height: 100%;
   object-fit: contain;
 }
 
@@ -55,7 +105,6 @@
 }
 
 .sidebar-item-price {
-  font-weight: 600;
   font-size: 14px;
 }
 
