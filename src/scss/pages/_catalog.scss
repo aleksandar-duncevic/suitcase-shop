@@ -1,3 +1,5 @@
+@use "../abstracts/variables";
+
 .catalog-toolbar, .catalog-wrapper, .pagination-wrapper {
   display: grid;
   grid-template-columns: 3fr 1fr; // 75% / 25%
@@ -109,6 +111,47 @@
 }
 
 .pagination {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.pagination-pages {
+  grid-column: 2;
   display: flex;
-  justify-content: space-between;
+  gap: 10px;
+}
+
+.pagination-next {
+  grid-column: 3;
+  justify-self: end;
+}
+
+.page {
+  width: 35px;
+  height: 35px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.page.active {
+  background: variables.$color-primary;
+  color: white;
+  border-radius: 4px;
+}
+
+.pagination-next {
+  padding: 10px 18px;
+  border: 1px solid variables.$color-primary;
+  background: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
