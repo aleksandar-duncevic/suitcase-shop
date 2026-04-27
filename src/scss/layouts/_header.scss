@@ -76,3 +76,7 @@ a {
   text-decoration: none;
   color: variables.$color-text;
 }
+
+a:hover {
+  color: variables.$color-primary;
+}
