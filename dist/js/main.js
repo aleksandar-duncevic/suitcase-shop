@@ -17,7 +17,7 @@ function loadComponent(id, path) {
             element.innerHTML = html;
         }
         else {
-            console.warn(`Element with ${id} not found`);
+            console.warn(`Element with id ${id} not found`);
         }
     });
 }

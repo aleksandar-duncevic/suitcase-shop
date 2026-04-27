@@ -6,7 +6,7 @@ async function loadComponent(id: string, path: string): Promise<void> {
   if (element) {
     element.innerHTML = html;
   } else {
-    console.warn(`Element with ${id} not found`);
+    console.warn(`Element with id ${id} not found`);
   }
 }
 
