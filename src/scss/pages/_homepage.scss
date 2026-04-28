@@ -115,7 +115,7 @@ section {
 }
 
 .discount-wrapper button {
-  background-color: #d63384;
+  background-color: variables.$color-primary;
   color: white;
   border: none;
   padding: 14px 28px;
@@ -191,7 +191,7 @@ section {
 }
 
 .discount-right button {
-  background: #d63384;
+  background: variables.$color-primary;
   border: none;
   padding: 12px 20px;
   color: white;
@@ -236,11 +236,11 @@ section {
   }
 
   &:hover img {
-    transform: scale(1.08); // 👈 added
+    transform: scale(1.08);
   }
 
   &:hover {
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25); // 👈 added
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
   }
 }
 
@@ -326,7 +326,7 @@ section {
   top: 12px;
   left: 12px;
 
-  background: #B92770;
+  background: variables.$color-primary;
   color: #fff;
   font-size: 12px;
   padding: 4px 8px;
@@ -340,7 +340,7 @@ section {
 }
 
 .product-card button {
-  background: #B92770;
+  background: variables.$color-primary;
   color: white;
 
   border: none;
@@ -353,6 +353,37 @@ section {
 
 .product-card button:hover {
   background: #a0215f;
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.slider-controls button {
+  width: 40px;
+  height: 40px;
+
+  border: 1px solid #ccc;
+  background: white;
+  color: variables.$color-text;
+
+  border-radius: 6px;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.slider-controls button:hover {
+  background: variables.$color-primary;
+  color: white;
+  border-color: variables.$color-primary;
+}
+
+.slider-controls button:active {
+  transform: scale(0.95);
 }
 
 .customers-cards {
@@ -368,6 +399,6 @@ section {
 }
 
 .customer-card h4 {
-  color:#d63384;
+  color:variables.$color-primary;
 }
 

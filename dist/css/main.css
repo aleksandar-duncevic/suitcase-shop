@@ -307,7 +307,7 @@ section {
 }
 
 .discount-wrapper button {
-  background-color: #d63384;
+  background-color: #b92770;
   color: white;
   border: none;
   padding: 14px 28px;
@@ -378,7 +378,7 @@ section {
 }
 
 .discount-right button {
-  background: #d63384;
+  background: #b92770;
   border: none;
   padding: 12px 20px;
   color: white;
@@ -493,7 +493,7 @@ section {
   position: absolute;
   top: 12px;
   left: 12px;
-  background: #B92770;
+  background: #b92770;
   color: #fff;
   font-size: 12px;
   padding: 4px 8px;
@@ -507,7 +507,7 @@ section {
 }
 
 .product-card button {
-  background: #B92770;
+  background: #b92770;
   color: white;
   border: none;
   padding: 10px 16px;
@@ -518,6 +518,34 @@ section {
 
 .product-card button:hover {
   background: #a0215f;
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.slider-controls button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  background: white;
+  color: #000;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.slider-controls button:hover {
+  background: #b92770;
+  color: white;
+  border-color: #b92770;
+}
+
+.slider-controls button:active {
+  transform: scale(0.95);
 }
 
 .customers-cards {
@@ -532,7 +560,7 @@ section {
 }
 
 .customer-card h4 {
-  color: #d63384;
+  color: #b92770;
 }
 
 .catalog-toolbar, .catalog-wrapper, .pagination-wrapper {
