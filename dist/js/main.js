@@ -22,13 +22,13 @@ function loadComponent(id, path) {
         }
     });
 }
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => __awaiter(void 0, void 0, void 0, function* () {
     //*** load components
     // detect if we are in /html folder
     const isSubPage = window.location.pathname.includes('/html/');
     const basePath = isSubPage ? '..' : '.';
-    loadComponent("header", `${basePath}/components/header.html`);
-    loadComponent("footer", `${basePath}/components/footer.html`);
+    yield loadComponent("header", `${basePath}/components/header.html`);
+    yield loadComponent("footer", `${basePath}/components/footer.html`);
     //*** router
     const path = window.location.pathname;
     if (path.endsWith('index.html') || path === '/' || path === '') {
@@ -37,4 +37,44 @@ document.addEventListener('DOMContentLoaded', () => {
     if (path.includes('catalog')) {
         initCatalog();
     }
-});
+    //*** open modal
+    const accountIcon = document.querySelector('.account-icon');
+    const modal = document.getElementById('loginModal');
+    if (accountIcon && modal) {
+        accountIcon.addEventListener('click', () => {
+            modal.classList.add('active');
+        });
+    }
+    const form = document.getElementById('loginForm');
+    if (form) {
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const emailInput = document.getElementById('email');
+            const passwordInput = document.getElementById('password');
+            if (!emailInput || !passwordInput) {
+                return;
+            }
+            const email = emailInput.value;
+            const password = passwordInput.value;
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Invalid email');
+                return;
+            }
+            if (!password) {
+                alert('Password required');
+                return;
+            }
+            // Success
+            modal.classList.remove('active');
+        });
+    }
+    const toggle = document.getElementById('togglePassword');
+    const passwordInput = document.querySelector('#password');
+    if (toggle && passwordInput) {
+        toggle.addEventListener('click', () => {
+            passwordInput.type =
+                passwordInput.type === 'password' ? 'text' : 'password';
+        });
+    }
+}));

@@ -13,15 +13,15 @@ async function loadComponent(id: string, path: string): Promise<void> {
   }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
 
   //*** load components
   // detect if we are in /html folder
   const isSubPage =  window.location.pathname.includes('/html/');
   const basePath = isSubPage? '..' : '.';
 
-  loadComponent("header", `${basePath}/components/header.html`);
-  loadComponent("footer", `${basePath}/components/footer.html`);
+  await loadComponent("header", `${basePath}/components/header.html`);
+  await loadComponent("footer", `${basePath}/components/footer.html`);
 
   //*** router
   const path = window.location.pathname;
@@ -32,6 +32,59 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (path.includes('catalog')) {
     initCatalog();
+  }
+
+
+  //*** open modal
+  const accountIcon = document.querySelector('.account-icon')!;
+  const modal = document.getElementById('loginModal')!;
+
+  if (accountIcon && modal) {
+    accountIcon.addEventListener('click', () => {
+      modal.classList.add('active');
+    });
+  }
+
+  const form = document.getElementById('loginForm');
+
+  if (form) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const emailInput = document.getElementById('email') as HTMLInputElement | null;
+      const passwordInput = document.getElementById('password') as HTMLInputElement | null;
+
+      if (!emailInput || !passwordInput) {
+        return;
+      }
+
+      const email = emailInput.value;
+      const password = passwordInput.value;
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (!emailRegex.test(email)) {
+        alert('Invalid email');
+        return;
+      }
+
+      if (!password) {
+        alert('Password required');
+        return;
+      }
+
+      // Success
+      modal.classList.remove('active');
+    });
+  }
+
+  const toggle = document.getElementById('togglePassword');
+  const passwordInput = document.querySelector<HTMLInputElement>('#password');
+  if (toggle && passwordInput) {
+    toggle.addEventListener('click', () => {
+      passwordInput.type =
+        passwordInput.type === 'password' ? 'text' : 'password';
+    });
   }
 
 });
