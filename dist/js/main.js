@@ -29,7 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const basePath = isSubPage ? '..' : '.';
     loadComponent("header", `${basePath}/components/header.html`);
     loadComponent("footer", `${basePath}/components/footer.html`);
-    //***
     //*** router
     const path = window.location.pathname;
     if (path.endsWith('index.html') || path === '/' || path === '') {
@@ -38,5 +37,4 @@ document.addEventListener('DOMContentLoaded', () => {
     if (path.includes('catalog')) {
         initCatalog();
     }
-    //***
 });

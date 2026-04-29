@@ -14,16 +14,14 @@ async function loadComponent(id: string, path: string): Promise<void> {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  //*** load components
 
+  //*** load components
   // detect if we are in /html folder
   const isSubPage =  window.location.pathname.includes('/html/');
   const basePath = isSubPage? '..' : '.';
 
   loadComponent("header", `${basePath}/components/header.html`);
   loadComponent("footer", `${basePath}/components/footer.html`);
-
-  //***
 
   //*** router
   const path = window.location.pathname;
@@ -35,6 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
   if (path.includes('catalog')) {
     initCatalog();
   }
-  //***
+
 });
 
