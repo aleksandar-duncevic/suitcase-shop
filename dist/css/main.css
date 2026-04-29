@@ -19,6 +19,13 @@ body {
   margin: 0;
 }
 
+#header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: white;
+}
+
 .container {
   width: 80%;
   max-width: 1300px;
