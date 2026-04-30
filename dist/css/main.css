@@ -110,7 +110,7 @@ a:hover {
   color: #b92770;
 }
 
-/* Modal background */
+/* Overlay */
 .modal {
   display: none;
   position: fixed;
@@ -118,21 +118,41 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
   justify-content: center;
   align-items: center;
 }
 
-/* Active state */
+/* Active */
 .modal.active {
   display: flex;
 }
 
 /* Modal box */
 .modal-content {
-  background: white;
-  padding: 30px;
-  width: 300px;
+  background: #ffffff;
+  padding: 40px;
+  width: 420px;
+}
+
+/* Labels */
+.modal-content label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+/* Inputs */
+.modal-content input[type=email],
+.modal-content input[type=password],
+.modal-content input[type=text] {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #b92770;
+  background: transparent;
+  outline: none;
+  margin-bottom: 20px;
+  font-size: 14px;
 }
 
 /* Password wrapper */
@@ -140,11 +160,45 @@ a:hover {
   position: relative;
 }
 
+/* Eye icon */
 #togglePassword {
   position: absolute;
-  right: 10px;
-  top: 50%;
+  right: 12px;
+  top: 38%;
   transform: translateY(-50%);
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+/* Options row */
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  margin-bottom: 25px;
+}
+
+.options label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Link */
+.options a {
+  color: #b92770;
+  text-decoration: none;
+}
+
+/* Button */
+.modal-content button {
+  width: 100%;
+  padding: 14px;
+  background: #b92770;
+  color: white;
+  border: none;
+  font-weight: bold;
   cursor: pointer;
 }
 
