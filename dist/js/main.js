@@ -47,6 +47,16 @@ document.addEventListener('DOMContentLoaded', () => __awaiter(void 0, void 0, vo
     }
     const form = document.getElementById('loginForm');
     if (form) {
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                modal.classList.remove('active');
+            }
+        });
+        document.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+            }
+        });
         form.addEventListener('submit', (e) => {
             e.preventDefault();
             const emailInput = document.getElementById('email');

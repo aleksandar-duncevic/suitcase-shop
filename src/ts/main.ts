@@ -48,6 +48,18 @@ document.addEventListener('DOMContentLoaded', async () => {
   const form = document.getElementById('loginForm');
 
   if (form) {
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        modal.classList.remove('active');
+      }
+    });
+
+    document.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.remove('active');
+      }
+    });
+
     form.addEventListener('submit', (e) => {
       e.preventDefault();
 
