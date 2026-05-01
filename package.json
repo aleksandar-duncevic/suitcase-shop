@@ -8,7 +8,8 @@
     "build": "echo \"Dummy build script required for Autocode Compile\"",
     "ts-compile": "npx tsc",
     "dev": "concurrently \"sass --watch src/scss:dist/css\" \"tsc --watch\" \"live-server --open=src/index.html\"",
-    "lint": "eslint src --ext .ts && stylelint \"src/**/*.scss\""
+    "lint": "eslint src --ext .ts && stylelint \"src/**/*.scss\"",
+    "lint:fix": "eslint src --ext .ts --fix && stylelint \"src/**/*.scss\" --fix"
   },
   "repository": {
     "type": "git",

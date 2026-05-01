@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
   }
 
-  const toggle = document.getElementById('togglePassword');
+  const toggle = document.getElementById('toggle-password');
   const passwordInput = document.querySelector<HTMLInputElement>('#password');
   if (toggle && passwordInput) {
     toggle.addEventListener('click', () => {

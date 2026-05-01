@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => __awaiter(void 0, void 0, vo
             modal.classList.remove('active');
         });
     }
-    const toggle = document.getElementById('togglePassword');
+    const toggle = document.getElementById('toggle-password');
     const passwordInput = document.querySelector('#password');
     if (toggle && passwordInput) {
         toggle.addEventListener('click', () => {

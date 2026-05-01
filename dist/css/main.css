@@ -1,4 +1,4 @@
-@import url("https://googleapis.com");
+@import 'https://googleapis.com';
 *,
 *::before,
 *::after {
@@ -98,7 +98,7 @@ nav ul {
 }
 
 nav ul li:last-child {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 a {
@@ -110,7 +110,6 @@ a:hover {
   color: #b92770;
 }
 
-/* Overlay */
 .modal {
   display: none;
   position: fixed;
@@ -123,26 +122,22 @@ a:hover {
   align-items: center;
 }
 
-/* Active */
 .modal.active {
   display: flex;
 }
 
-/* Modal box */
 .modal-content {
-  background: #ffffff;
+  background: #fff;
   padding: 40px;
   width: 420px;
 }
 
-/* Labels */
 .modal-content label {
   display: block;
   font-size: 14px;
   margin-bottom: 6px;
 }
 
-/* Inputs */
 .modal-content input[type=email],
 .modal-content input[type=password],
 .modal-content input[type=text] {
@@ -155,13 +150,11 @@ a:hover {
   font-size: 14px;
 }
 
-/* Password wrapper */
 .password-wrapper {
   position: relative;
 }
 
-/* Eye icon */
-#togglePassword {
+#toggle-password {
   position: absolute;
   right: 12px;
   top: 38%;
@@ -170,7 +163,6 @@ a:hover {
   opacity: 0.6;
 }
 
-/* Options row */
 .options {
   display: flex;
   justify-content: space-between;
@@ -185,13 +177,11 @@ a:hover {
   gap: 6px;
 }
 
-/* Link */
 .options a {
   color: #b92770;
   text-decoration: none;
 }
 
-/* Button */
 .modal-content button {
   width: 100%;
   padding: 14px;
@@ -208,7 +198,7 @@ footer {
 
 .footer-background {
   background-color: #504E4A;
-  padding: 10px 0 20px 0;
+  padding: 10px 0 20px;
   color: white;
   background-image: url("../../src/assets/icons/footer/wave-line.svg");
   background-repeat: repeat;
@@ -326,7 +316,7 @@ section {
   letter-spacing: 0.5px;
   margin-top: 30px;
   background-color: #B92770;
-  color: #ffffff;
+  color: #fff;
   border: none;
   font-size: 15px;
   font-weight: bold;
@@ -470,13 +460,13 @@ section {
 .discount-right h3 {
   font-size: 34px;
   font-weight: 700;
-  margin: 0px;
+  margin: 0;
 }
 
 .discount-right p {
   font-size: 15px;
   font-weight: 200;
-  margin: 0px;
+  margin: 0;
   opacity: 0.9;
 }
 
@@ -777,8 +767,7 @@ section {
 }
 
 .pagination {
-  grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column: 1/2;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
