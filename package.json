@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "echo \"Dummy build script required for Autocode Compile\"",
     "ts-compile": "npx tsc",
-    "dev": "concurrently \"sass --watch src/scss:dist/css\" \"tsc --watch\" \"live-server --open=src/index.html\""
+    "dev": "concurrently \"sass --watch src/scss:dist/css\" \"tsc --watch\" \"live-server --open=src/index.html\"",
+    "lint": "eslint src --ext .ts && stylelint \"src/**/*.scss\""
   },
   "repository": {
     "type": "git",
@@ -18,9 +19,16 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@typescript-eslint/eslint-plugin": "^8.59.1",
+    "@typescript-eslint/parser": "^8.59.1",
     "concurrently": "^9.2.1",
+    "eslint": "^10.2.1",
     "live-server": "^1.2.2",
     "sass": "^1.99.0",
-    "typescript": "^6.0.2"
+    "stylelint": "^17.9.1",
+    "stylelint-config-standard-scss": "^17.0.0",
+    "typescript": "^6.0.2",
+    "typescript-eslint": "^8.59.1"
   }
 }
