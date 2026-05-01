@@ -20,10 +20,21 @@ This command run three processes in parallel:
 
 The application will automatically open in your browser at:
 
-http://127.0.0.1:8080/src/index.html
+http://127.0.0.1:8080/src/index.html  
+
+## Code Quality
+
+This project uses ESLint for TypeScript and Stylelint for SCSS to ensure consistent code quality.
+
+### Run lint checks
+npm run lint
+
+### Automatically fix issues
+npm run lint:fix
 
 ### Notes
 No additional tools are required  
 Do not edit files in dist/ folder, they are auto-generated  
 All styles must be written in SCSS and compiled into CSS  
 All TypeScript is compiled into JavaScript before running in the browser  
+Code quality is enforced using ESLint and Stylelint  
