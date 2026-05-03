@@ -42,3 +42,6 @@ All styles must be written in SCSS and compiled into CSS
 All TypeScript is compiled into JavaScript before running in the browser  
 Do not edit files in dist/ folder, they are auto-generated  
 Code quality is enforced using ESLint and Stylelint  
+
+### Final Project Implementation Checklist  
+20/64
