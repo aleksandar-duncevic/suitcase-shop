@@ -685,9 +685,6 @@ section {
 }
 .select-box select {
   color: #777;
-}
-
-.select-box select {
   width: 100%;
   padding: 10px 35px 10px 12px;
   border: 1px solid #ddd;
@@ -783,6 +780,15 @@ section {
 .pagination-next {
   grid-column: 3;
   justify-self: end;
+  padding: 10px 18px;
+  border: 1px solid #b92770;
+  background: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .page {
@@ -797,18 +803,6 @@ section {
   background: #b92770;
   color: white;
   border-radius: 4px;
-}
-
-.pagination-next {
-  padding: 10px 18px;
-  border: 1px solid #b92770;
-  background: transparent;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  gap: 8px;
 }
 
 /*# sourceMappingURL=main.css.map */
