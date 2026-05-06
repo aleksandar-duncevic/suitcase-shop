@@ -7,9 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "echo \"Dummy build script required for Autocode Compile\"",
     "ts-compile": "npx tsc",
-    "dev": "concurrently \"sass --watch src/scss:dist/css\" \"tsc --watch\" \"live-server --open=src/index.html\"",
+    "dev": "concurrently \"sass --watch src/scss:dist/css\" \"tsc --watch\" \"npm run copy:watch\" \"live-server dist --watch=dist\"",
     "lint": "eslint src --ext .ts && stylelint \"src/**/*.scss\"",
-    "lint:fix": "eslint src --ext .ts --fix && stylelint \"src/**/*.scss\" --fix"
+    "lint:fix": "eslint src --ext .ts --fix && stylelint \"src/**/*.scss\" --fix",
+    "copy": "cpx \"src/assets/**/*\" dist/assets && cpx src/index.html dist",
+    "copy:watch": "concurrently \"cpx \\\"src/assets/**/*\\\" dist/assets --watch\" \"cpx src/index.html dist --watch\""
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,8 @@
     "@typescript-eslint/eslint-plugin": "^8.59.1",
     "@typescript-eslint/parser": "^8.59.1",
     "concurrently": "^9.2.1",
+    "copyfiles": "^2.4.1",
+    "cpx": "^1.5.0",
     "eslint": "^10.2.1",
     "live-server": "^1.2.2",
     "sass": "^1.99.0",
