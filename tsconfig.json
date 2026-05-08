@@ -3,7 +3,7 @@
     "target": "ES6",                     
     "module": "ES6",
     "lib": ["ES2016", "DOM"],             
-    "outDir": "./dist/js",                  // Compiled JS files go here
+    "outDir": "./docs/js",                  // Compiled JS files go here
     "rootDir": "./src/ts",                  // TS source files
     "strict": true,                      
     "esModuleInterop": true,             
@@ -16,6 +16,6 @@
   ],
   "exclude": [
     "node_modules",
-    "dist"
+    "docs"
   ]
 }

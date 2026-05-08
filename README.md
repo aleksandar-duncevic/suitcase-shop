@@ -14,8 +14,8 @@ npm install
 npm run dev
 ```
 This command runs three processes in parallel:
-- Compiles SCSS files from src/scss into CSS in dist/css
-- Compiles TypeScript files from src/ts into JavaScript files in dist/js
+- Compiles SCSS files from src/scss into CSS in docs/css
+- Compiles TypeScript files from src/ts into JavaScript files in docs/js
 - Starts a local development server using live-server
 
 The application will open at:
@@ -40,7 +40,7 @@ npm run lint:fix
 No additional global dependencies are required  
 All styles must be written in SCSS and compiled into CSS  
 All TypeScript is compiled into JavaScript before running in the browser  
-Do not edit files in dist/ folder, they are auto-generated  
+Do not edit files in docs/ folder, they are auto-generated  
 Code quality is enforced using ESLint and Stylelint  
 
 ### Final Project Implementation Checklist  
