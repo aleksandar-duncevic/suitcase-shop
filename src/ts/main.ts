@@ -17,11 +17,13 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   //*** load components
   // detect if we are in /html folder
+  /*
   const isSubPage =  window.location.pathname.includes('/html/');
   const basePath = isSubPage? '..' : '.';
 
   await loadComponent("header", `${basePath}/components/header.html`);
   await loadComponent("footer", `${basePath}/components/footer.html`);
+  */
 
   //*** router
   const path = window.location.pathname;
