@@ -315,7 +315,7 @@ section {
   padding: 0 24px;
   letter-spacing: 0.5px;
   margin-top: 30px;
-  background-color: #B92770;
+  background-color: #b92770;
   color: #fff;
   border: none;
   font-size: 15px;
@@ -359,7 +359,7 @@ section {
 
 .discount-wrapper {
   position: relative;
-  background-image: url("../../src/assets/icons/homepage/suitcases-main-banner.png");
+  background-image: url("../assets/icons/homepage/suitcases-main-banner.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -415,7 +415,7 @@ section {
 .discount-banner {
   position: relative;
   overflow: hidden;
-  background: url("../../src/assets/images/homepage/offer-of-the-month-banner.png") center/cover no-repeat;
+  background: url("../assets/images/homepage/offer-of-the-month-banner.png") center/cover no-repeat;
 }
 
 .discount-banner::before {
