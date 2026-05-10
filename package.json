@@ -10,8 +10,8 @@
     "dev": "concurrently \"sass --watch src/scss:docs/css\" \"tsc --watch\" \"npm run copy:watch\" \"live-server docs --watch=docs\"",
     "lint": "eslint src --ext .ts && stylelint \"src/**/*.scss\"",
     "lint:fix": "eslint src --ext .ts --fix && stylelint \"src/**/*.scss\" --fix",
-    "copy": "cpx \"src/assets/**/*\" docs/assets && cpx src/index.html docs",
-    "copy:watch": "concurrently \"cpx \\\"src/assets/**/*\\\" docs/assets --watch\" \"cpx src/*.html docs --watch\""
+    "copy": "cpx \"src/assets/**/*\" docs/assets && cpx \"src/components/**/*\" docs/components && cpx \"src/*.html\" docs",
+    "copy:watch": "concurrently \"cpx \\\"src/assets/**/*\\\" docs/assets --watch\" \"cpx \\\"src/components/**/*\\\" docs/components --watch\" \"cpx \\\"src/*.html\\\" docs --watch\""
   },
   "repository": {
     "type": "git",
