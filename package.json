@@ -11,7 +11,7 @@
     "lint": "eslint src --ext .ts && stylelint \"src/**/*.scss\"",
     "lint:fix": "eslint src --ext .ts --fix && stylelint \"src/**/*.scss\" --fix",
     "copy": "cpx \"src/assets/**/*\" docs/assets && cpx src/index.html docs",
-    "copy:watch": "concurrently \"cpx \\\"src/assets/**/*\\\" docs/assets --watch\" \"cpx src/index.html docs --watch\""
+    "copy:watch": "concurrently \"cpx \\\"src/assets/**/*\\\" docs/assets --watch\" \"cpx src/*.html docs --watch\""
   },
   "repository": {
     "type": "git",
