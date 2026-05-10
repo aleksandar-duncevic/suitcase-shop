@@ -28,10 +28,9 @@ document.addEventListener('DOMContentLoaded', () => __awaiter(void 0, void 0, vo
     /*
     const isSubPage =  window.location.pathname.includes('/html/');
     const basePath = isSubPage? '..' : '.';
-  
-    await loadComponent("header", `${basePath}/components/header.html`);
-    await loadComponent("footer", `${basePath}/components/footer.html`);
     */
+    yield loadComponent("header", `./components/header.html`);
+    yield loadComponent("footer", `./components/footer.html`);
     //*** router
     const path = window.location.pathname;
     if (path.endsWith('index.html') || path === '/' || path === '') {

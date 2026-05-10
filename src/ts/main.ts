@@ -20,10 +20,10 @@ document.addEventListener('DOMContentLoaded', async () => {
   /*
   const isSubPage =  window.location.pathname.includes('/html/');
   const basePath = isSubPage? '..' : '.';
-
-  await loadComponent("header", `${basePath}/components/header.html`);
-  await loadComponent("footer", `${basePath}/components/footer.html`);
   */
+  await loadComponent("header", `./components/header.html`);
+  await loadComponent("footer", `./components/footer.html`);
+  
 
   //*** router
   const path = window.location.pathname;
