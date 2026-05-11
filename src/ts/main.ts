@@ -27,8 +27,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   //*** router
   const path = window.location.pathname;
+  const homepage = path.endsWith('/') || path.endsWith('index.html');
 
-  if (path.endsWith('index.html') || path === '/' || path === '') {
+  if (homepage) {
     initHome();
   }
 

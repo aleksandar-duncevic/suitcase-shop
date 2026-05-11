@@ -33,7 +33,8 @@ document.addEventListener('DOMContentLoaded', () => __awaiter(void 0, void 0, vo
     yield loadComponent("footer", `./components/footer.html`);
     //*** router
     const path = window.location.pathname;
-    if (path.endsWith('index.html') || path === '/' || path === '') {
+    const homepage = path.endsWith('/') || path.endsWith('index.html');
+    if (homepage) {
         initHome();
     }
     if (path.includes('catalog')) {
