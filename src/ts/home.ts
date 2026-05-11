@@ -13,7 +13,7 @@ type Product = {
 }
 
 async function getProducts(): Promise<Product[]> {
-  const res = await fetch('/src/assets/data.json');
+  const res = await fetch('assets/data.json');
   const json = await res.json();
   return json.data;
 }

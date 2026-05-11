@@ -9,7 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 function getProducts() {
     return __awaiter(this, void 0, void 0, function* () {
-        const res = yield fetch('/src/assets/data.json');
+        const res = yield fetch('assets/data.json');
         const json = yield res.json();
         return json.data;
     });
