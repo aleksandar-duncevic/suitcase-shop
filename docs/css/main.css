@@ -110,6 +110,14 @@ a:hover {
   color: #b92770;
 }
 
+.account-icon {
+  cursor: pointer;
+}
+
+.shopping-cart {
+  cursor: pointer;
+}
+
 .modal {
   display: none;
   position: fixed;

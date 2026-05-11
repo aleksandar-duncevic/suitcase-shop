@@ -80,6 +80,14 @@ a:hover {
   color: variables.$color-primary;
 }
 
+.account-icon {
+  cursor: pointer;
+}
+
+.shopping-cart {
+  cursor: pointer;
+}
+
 .modal {
   display: none;
   position: fixed;
